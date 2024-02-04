@@ -1,0 +1,32 @@
+.text-effect {
+  font-size: 10rem;
+  color: rgb(209 213 219);
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(250 204 21 / 1);
+  z-index: 10;
+}
+
+.text{
+    font-size: 10rem;
+    line-height: 1.25;
+    font-weight: 900;
+    /* color: rgb(209 213 219); */
+}
+
+.img-div {
+  width: 100%;
+  height: 100%;
+  rotate: -35deg;
+  overflow: hidden;
+
+  position: absolute;
+  top: -5%;
+  left: -20%;
+}
+
+.img-div img {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+}
