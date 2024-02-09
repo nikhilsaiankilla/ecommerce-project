@@ -34,6 +34,7 @@ const PopularCollection = () => {
               <CardLoadingSkeleton />
               <CardLoadingSkeleton />
               <CardLoadingSkeleton />
+              <CardLoadingSkeleton />
             </>
             :
             products?.slice(0, 8).map((item) => (<Card item={item} key={item.id}/>))

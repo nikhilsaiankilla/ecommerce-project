@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-const BASE_URL = 'http://localhost:1337';
-const API_KEY = 'df5ae24baa448698205670152e3782bc105de1925fbb3c7c0ee652a206044c517c1d4878a15a2d32988e53ab3faf9de32a510b8ebff0dd69d58ba58b02ab4371aef23b738d8cec2c2320bd145941747e03b4523c94369903cfdd4786a9aacc48098739302307f21dcc0169ff209fd4430d098173c599be70ada2bcb21753cddc';
+const BASE_URL = 'https://nikstore-strapi-backend-2.onrender.com';
+const API_KEY = 'f811247fa3220fc711a8160cf57a3b5b4e8206c889304bc52a43952692bab2c95cab01196d9aaaca9396d02fc25386f586fd12e354aa949644fbe8a32f62ba9a3fcdcdb8cb887da7a3e0480b892a2c7c87ff767ec3c5759ad62f3bc7616e8b07d21dff3dd3b4788122fbb25af27f892671a8fbe7a13db29c7d03fd237aa638ca';
 
 const useFetch = (url) => {
     const [data, setData] = useState(null);

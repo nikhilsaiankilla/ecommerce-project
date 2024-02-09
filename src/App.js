@@ -6,16 +6,18 @@ import Category from "./pages/category/Category";
 import Product from "./pages/product/Product";
 import Cart from "./pages/cart/Cart";
 import Favourite from "./pages/favorite/Favourite";
-import Checkout from './pages/checkout/Checkout'
+import Checkout from "./pages/checkout/Checkout";
 import Orders from "./pages/orders/Orders";
 import Success from "./pages/success/Success";
 import Error from "./pages/404/Error";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 
 function App() {
   return (
     <BrowserRouter>
+      <LoadingScreen />
       <TopNav />
       <Navbar />
       <Toast />

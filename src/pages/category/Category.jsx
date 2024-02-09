@@ -12,12 +12,14 @@ const Category = () => {
 
   const { data: categoryData, loading: categoryLoading } = useFetch(`/api/categories/${name}?populate=*`);
 
+  console.log(categoryData);
+
   return (
     <div className='w-full'>
       <div className='w-full h-[80vh] sm:h-[80vh] md:h-[70vh] lg:h-[60vh] relative rounded-3xl' >
         <Banner categoryLoading={categoryLoading} categoryData={categoryData} />
         <div className='w-full h-full absolute top-0 left-0 z-0 rounded-3xl'>
-          <Img image={`http://localhost:1337` + categoryData?.data?.attributes?.image?.data?.attributes?.url} className='w-full h-full object-cover rounded-3xl' />
+          <Img image={categoryData?.data?.attributes?.images?.data?.attributes?.url} className='w-full h-full object-cover rounded-3xl' />
         </div>
       </div>
       <div className='w-full flex items-center justify-center flex-col my-5'>

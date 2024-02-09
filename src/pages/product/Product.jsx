@@ -76,7 +76,7 @@ const Product = () => {
               <div className="w-full sm:w-full md:w-full lg:w-[80%] h-[500px] md:h-[500px] lg:h-screen select-none">
                 <div className="w-full h-full flex items-center justify-center">
                   {productImages && productImages.length > 0 && (
-                    <Img image={'http://localhost:1337' + productImages[activeImage]?.attributes?.url} className="w-full h-full object-cover" />
+                    <Img image={productImages[activeImage]?.attributes?.url} className="w-full h-full object-cover" />
                   )}
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Product = () => {
                     productImages?.map((image, index) => (
                       <div className="w-[70px] h-[70px] sm:w-[70px] sm:h-[70px] lg:w-[100px] lg:h-[100px] rounded-xl cursor-pointer select-none" key={index} onClick={() => handleChangeImage(index)}>
                         <div className="w-full h-full flex items-center justify-center overflow-hidden">
-                          <Img image={'http://localhost:1337' + image?.attributes?.url} className="w-full h-full object-cover" />
+                          <Img image={image?.attributes?.url} className="w-full h-full object-cover" />
                         </div>
                       </div>
                     ))

@@ -8,18 +8,18 @@ const MoreProductsSection = () => {
     <div className='w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-5'>
       < div className='flex-1 h-screen w-full rounded-3xl select-none relative' >
         <Img image={shoe5} className='w-full h-full object-cover absolute top-0 left-0' />
-        <Button title='Male Products' path='men' className='absolute bottom-[5%] right-[5%]' />
+        <Button title='Male Products' path='/category/3' className='absolute bottom-[5%] right-[5%]' />
       </div >
 
       <div className='flex-1 w-full min-h-screen flex flex-col gap-5'>
         <div className="w-full flex flex-col sm:flex-col md:flex-row lg:flex-row gap-5">
           < div className='flex-1 h-[350px] sm:h-[350px] md:h-[400px] w-full  rounded-3xl select-none relative' >
             <Img image={shoe6} className='w-full h-full object-cover absolute top-0 left-0' />
-            <Button title='Male Products' path='men' className='absolute bottom-[5%] right-[5%]' />
+            <Button title='Male Products' path='/category/1' className='absolute bottom-[5%] right-[5%]' />
           </div >
           <div className='flex-1 h-[350px] sm:h-[350px] md:h-[400px] w-full rounded-3xl select-none relative'>
             <Img image={shoe4} className='w-full h-full object-cover absolute top-0 left-0' />
-            <Button title='Male Products' path='men' className='absolute bottom-[5%] right-[5%]' />
+            <Button title='Male Products' path='/category/2' className='absolute bottom-[5%] right-[5%]' />
           </div>
         </div>
         <div className='w-full'>
@@ -42,7 +42,7 @@ const MoreProductsSection = () => {
               <p className='text-sm font-light text-gray-500'>yearly growth</p>
             </div>
             < div className='w-full flex items-center justify-between mt-5 flex-col sm:flex-col lg:flex-row' >
-              <Button title='start shopping' path='men' className='mb-5' />
+              <Button title='start shopping' path='/category/3' className='mb-5' />
               <p className='w-full sm:w-full md:w-4/5 lg:w-3/5 text-gray-500 font-light text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, nulla.</p>
             </div >
           </div>

@@ -55,7 +55,7 @@ const Orders = () => {
                                                             key={item?.id}
                                                         >
                                                             <div className='w-full h-full md:w-[300px] md:h-[300px]'>
-                                                                <Img image={'http://localhost:1337' + item?.attributes?.images?.data[0].attributes?.url} className='w-full h-full object-cover' />
+                                                                <Img image={item?.attributes?.images?.data[0].attributes?.url} className='w-full h-full object-cover' />
                                                             </div>
 
                                                             <div className='w-full md:w-[70%] h-full flex justify-center flex-col gap-3 mt-3'>

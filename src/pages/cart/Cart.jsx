@@ -222,7 +222,7 @@ const Cart = () => {
                                 >
                                     <IoMdClose className="absolute text-3xl top-2 right-2 md:top-6 md:right-6 cursor-pointer" onClick={() => removingProductFromCart(item)} />
                                     <div className='w-full h-full sm:w-full sm:h-full md:w-[250px] md:h-[250px]'>
-                                        <Img image={'http://localhost:1337' + item?.attributes?.images?.data[0].attributes?.url} className='w-full h-full object-cover' />
+                                        <Img image={item?.attributes?.images?.data[0].attributes?.url} className='w-full h-full object-cover' />
                                     </div>
 
                                     <div className='w-full md:w-[70%] h-full flex flex-col items-start justify-center gap-3 mt-3'>

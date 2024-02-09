@@ -48,7 +48,7 @@ const Card = ({ item }) => {
     return (
         <div className='card relative w-[240px] h-[240px] sm:w-[240px] sm:h-[240px] lg:w-[300px] lg:h-[300px] border border-yellow-300 rounded-lg select-none cursor-pointer'>
             <div className="w-full h-[75%] p-2" onClick={() => navigate(`/product/${item?.id}`)}>
-                <Img image={'http://localhost:1337' + item?.attributes?.images?.data[0]?.attributes?.url}  className='w-full h-full object-cover'/>
+                <Img image={item?.attributes?.images?.data[0]?.attributes?.url}  className='w-full h-full object-cover'/>
             </div>
             <div className="w-full h-[25%] px-2 flex items-center justify-between border-t-[1px] border-yellow-300 overflow-hidden">
                 <div>
