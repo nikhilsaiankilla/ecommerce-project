@@ -73,7 +73,7 @@ const Product = () => {
               ?
               <ProductPageLoadingSkeleton />
               :
-              <div className="w-full sm:w-full md:w-full lg:w-[80%] h-[500px] md:h-[500px] lg:h-screen select-none">
+              <div className="w-full sm:w-full md:w-full lg:w-[80%] h-[500px] md:h-[500px] lg:h-[82vh] select-none">
                 <div className="w-full h-full flex items-center justify-center">
                   {productImages && productImages.length > 0 && (
                     <Img image={productImages[activeImage]?.attributes?.url} className="w-full h-full object-cover" />
