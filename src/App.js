@@ -12,12 +12,10 @@ import Success from "./pages/success/Success";
 import Error from "./pages/404/Error";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 
 function App() {
   return (
     <BrowserRouter>
-      <LoadingScreen />
       <TopNav />
       <Navbar />
       <Toast />

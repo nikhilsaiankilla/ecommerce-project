@@ -179,7 +179,7 @@ const Cart = () => {
         const calculatedTotalAmount = calculateTotal(cart);
         const calculatedPlatformFee = calculatingPlanformFee();
         const calculatedShippingFee = calculatingShippingFee();
-        const discountCodeValue = discountCodeApplied.current?.value.trim() || 'NIK0';
+        const discountCodeValue = discountCodeApplied.current?.value.trim() || 'NIK300';
         const calculatedDiscount = calculatingDiscount(discountCodeValue);
 
         setTotalAmount(calculatedTotalAmount);
@@ -225,10 +225,10 @@ const Cart = () => {
                                         <Img image={item?.attributes?.images?.data[0].attributes?.url} className='w-full h-full object-cover' />
                                     </div>
 
-                                    <div className='w-full md:w-[70%] h-full flex flex-col items-start justify-center gap-3 mt-3'>
+                                    <div className='w-full md:w-[70%] h-full flex flex-col items-start justify-center gap-1 mt-1'>
 
                                         <h3 className="text-2xl font-semibold capitalize leading-loose overflow-hidden">{item?.attributes?.title}</h3>
-                                        <p className='text-sm text-gray-500 leading-loose overflow-hidden'>{item?.attributes?.description}</p>
+                                        <p className='text-sm text-gray-500 leading-normal overflow-hidden'>{item?.attributes?.description.slice(0,325)}</p>
 
                                         <div className='w-full flex flex-col justify-center gap-2'>
 
