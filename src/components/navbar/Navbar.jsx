@@ -18,8 +18,8 @@ const Navbar = () => {
   }, [data])
 
   return (
-    <div className='relative w-full'>
-      <div className="px-10 md:px-24 w-screen h-24 flex items-center justify-between bg-transparent relative z-40">
+    <div className='w-full fixed top-0 left-0 z-30 bg-white shadow-sm'>
+      <div className="px-10 md:px-24 w-screen py-6 flex items-center justify-between bg-transparent relative z-40">
         <h1 className='text-2xl font-bold text-yellow-400 cursor-pointer select-none'><Link to='/'>Nik Store</Link></h1>
         <ul className='gap-7 sm:hidden md:hidden lg:flex hidden'>
           <li className={`text-black font-semibold cursor-pointer text-xl uppercase`}><Link to='/'>Home</Link></li>

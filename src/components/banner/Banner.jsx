@@ -13,7 +13,11 @@ const Banner = ({ categoryLoading, categoryData }) => {
                         {categoryData?.data?.attributes?.title}
                     </h1>
                     <p className='w-full sm:w-full md:w-full lg:w-3/5 text-sm sm:text-sm md:text-lg lg:text-lg leading-normal py-1 mb-3 text-white'>{categoryData?.data?.attributes?.description}</p>
-                    <button onClick={() => navigate('/category/1')} className='block px-4 py-2 text-sm sm:text-sm md:text-lg lg:text-xl font-bold bg-black text-white rounded-xl capitalize'>shop now</button>
+                    <button
+                        onClick={() => navigate('/product/4')}
+                        className='w-fit mt-2 btn-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline bg-yellow-400 hover:bg-yellow-600 text-white font-normal py-2 px-4 mr-1 rounded'>
+                        order now
+                    </button>
                 </div>
                 :
                 <BannerLoadingSkeleton />

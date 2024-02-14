@@ -44,3 +44,43 @@ export const ProductSmallLoadingSkeletoon = () => {
             <div className='skeleton w-full h-full'></div>
         </div>)
 }
+
+export const ProductDetailsSkeleton = () => {
+    return (
+        <div className='skeleton-wrapper w-full h-[80vh] p-3 rounded-xl flex flex-col gap-5'>
+            <div className='skeleton w-3/5 h-10 rounded-md'></div>
+            <div className='skeleton w-4/5 h-5 rounded-sm'></div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+            <div className='flex gap-2 overflow-hidden'>
+                <span className="skeleton w-[30px] h-[30px] rounded-sm"></span>
+                <span className="skeleton w-[30px] h-[30px] rounded-sm"></span>
+                <span className="skeleton w-[30px] h-[30px] rounded-sm"></span>
+                <span className="skeleton w-[30px] h-[30px] rounded-sm"></span>
+                <span className="skeleton w-[30px] h-[30px] rounded-sm"></span>
+            </div>
+            <div className='flex gap-5 overflow-hidden'>
+                <span className="skeleton w-[150px] h-[30px] rounded-sm"></span>
+                <span className="skeleton w-[150px] h-[30px] rounded-sm"></span>
+            </div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+            <div className='skeleton w-full h-2 rounded-sm'></div>
+            <div className='flex gap-2 overflow-hidden'>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[50px] h-[50px] rounded-sm"></span>
+            </div>
+            <div className='flex flex-wrap gap-3 overflow-hidden'>
+                <span className="skeleton w-[300px] h-[50px] rounded-sm"></span>
+                <span className="skeleton w-[300px] h-[50px] rounded-sm"></span>
+            </div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+            <div className='skeleton w-3/5 h-5 rounded-sm'></div>
+        </div>
+    )
+}

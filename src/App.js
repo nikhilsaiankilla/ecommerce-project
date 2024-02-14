@@ -19,7 +19,7 @@ function App() {
       <TopNav />
       <Navbar />
       <Toast />
-      <main className="px-10 md:px-24 h-full w-full">
+      <main className="px-10 md:px-24 h-full w-full mt-[100px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/category/:name" element={<Category />} />
